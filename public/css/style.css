@@ -4,13 +4,15 @@
   align-items: center;
   justify-content: center;
 }
-.themelist {
+.themeList {
   margin: 50px auto 50px auto;
+  padding: 10px;
+
   /* height: 700px !important; */
 }
-/* .imgProduct{
-    height: 500px !important;
-} */
+.imgProduct {
+  height: 500px !important;
+}
 .form {
   display: flex;
   flex-direction: row;
@@ -26,4 +28,7 @@ input {
 }
 .productOne {
   padding: 15px;
+}
+h1 {
+  background-color: aqua;
 }
