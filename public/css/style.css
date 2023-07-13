@@ -5,10 +5,19 @@
   justify-content: center;
 }
 .themeList {
+  display: flex;
   margin: 50px auto 50px auto;
   padding: 10px;
+  justify-content: space-around;
+  align-items: center;
 
   /* height: 700px !important; */
+}
+.theme-container {
+  align-items: center;
+  padding: 250px;
+  background-color: aquamarine;
+  border-radius: 25px;
 }
 .imgProduct {
   height: 500px !important;
@@ -24,11 +33,21 @@ input {
   border-bottom: none !important;
 }
 .card-image {
-  padding: 10px;
+  padding: 20px;
 }
-.productOne {
+.brand-logo {
+  margin-left: 10px;
+}
+.mainContainer {
   padding: 15px;
 }
 h1 {
-  background-color: aqua;
+  background-color: aquamarine;
+}
+.nextQuest {
+  font-size: 20px;
+  color: aliceblue;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
 }

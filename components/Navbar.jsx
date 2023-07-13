@@ -12,7 +12,7 @@ module.exports = function Navbar({ user }) {
             <a href="/">Главная</a>
           </li>
           <li>
-            <a href="/themes">ТЕМЫ</a>
+            <a href="/themes">Темы</a>
           </li>
         </ul>
       </div>
