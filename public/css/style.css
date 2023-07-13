@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.themelist {
+  margin: 50px auto 50px auto;
+  /* height: 700px !important; */
+}
+/* .imgProduct{
+    height: 500px !important;
+} */
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  background-color: white !important;
+  border-bottom: none !important;
+}
+.card-image {
+  padding: 10px;
+}
+.productOne {
+  padding: 15px;
+}
