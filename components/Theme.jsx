@@ -8,7 +8,7 @@ module.exports = function Theme({ theme }) {
           <h1 className="theme-title">{theme.theme}</h1>
         </div>
         <div className="card-action">
-          <a href={`/themes/${theme.id}`} className="nextQuest">
+          <a href={`/themes/${theme.id}/question/0`} className="nextQuest">
             Перейти к вопросам 👉
           </a>
         </div>

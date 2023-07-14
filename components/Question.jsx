@@ -2,7 +2,7 @@ const React = require("react");
 const Layout = require("./Layout");
 const AddForm = require("./AddForm");
 
-module.exports = function ProductPage({ question }) {
+module.exports = function ProductPage({ question, index }) {
   return (
     <Layout>
       <div className="col s12 lighten-4 qqq">

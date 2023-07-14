@@ -10,10 +10,15 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/:idTheme/question/:indexQuestion", async (req, res) => {
-  const { idTheme } = req.params;
+  const { idTheme, indexQuestion } = req.params;
   const questions = await Question.findAll({ where: { themeId: idTheme } });
-  console.log(questions[0]);
-  res.renderComponent(QuestionL, { question: questions[0] });
+  let index = indexQuestion;
+  if (index < questions.length) {
+    index++;
+    res.renderComponent(QuestionL, { question: questions[indexQuestion], index });
+  }
+
+  // res.renderComponent(QuestionL, { question: questions[indexQuestion],  });
 });
 
 router.post("/matchQuestion", async (req, res) => {
