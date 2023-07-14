@@ -25,20 +25,3 @@ if (matchQuestion) {
     }
   });
 }
-
-if (qqq) {
-  qqq.addEventListener('click', async (e) => {
-    
-    // if (e.target.classList.contains('q-button')) {
-    //   const productOne = e.target.closest('.qqq');
-    //   console.log(productOne.dataset.id);
-    //   const res = await fetch(`/products/${productOne.dataset.id}/delete`, {
-    //     method: 'DELETE',
-    //   });
-    //   const data = await res.json();
-    //   if (data.delProduct) {
-    //     productOne.remove();
-    //   }
-    // }
-  });
-}
