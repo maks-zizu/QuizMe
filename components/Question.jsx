@@ -5,7 +5,7 @@ const AddForm = require("./AddForm");
 module.exports = function ProductPage({ question, index }) {
   return (
     <Layout>
-      <div className="col s12 lighten-4 qqq">
+      <div className="col s12 lighten-4 qqq" data-id={question.id} data-index={index}>
         <div className="q">
           <div className="q-image">
             <span className="q-title">Тема: {question.themeId}</span>
@@ -14,7 +14,7 @@ module.exports = function ProductPage({ question, index }) {
             <span className="q-title">Вопрос: {question.question}</span>
           </div>
         </div>
-        <button className="q-button">Следующий вопрос</button>
+        <a href={`/themes/${question.themeId}/question/${index}`}><button className="q-button">Следующий вопрос</button></a>
       </div>
       <AddForm questionId={question.id} />
     </Layout>
