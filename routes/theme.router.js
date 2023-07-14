@@ -26,7 +26,7 @@ router.post("/matchQuestion", async (req, res) => {
         });
       } else {
         res.json({
-          message: "ОшибОчка вышла(",
+          message: `Ответ неверный, правильный ответ: ${question.answer}`,
         });
       }
     } else {
