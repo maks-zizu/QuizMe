@@ -16,7 +16,7 @@ module.exports = function ProductPage({ theme }) {
         </div>
         <button className="q-button">Следующий вопрос</button>
       </div>
-      <AddForm/>
+      <AddForm questionId={theme.id} />
     </Layout>
   );
 };
