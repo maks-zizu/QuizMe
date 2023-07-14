@@ -1,7 +1,7 @@
-const Layout = require('./Layout');
-const React = require('react');
+const Layout = require("./Layout");
+const React = require("react");
 
-module.exports = function MatchQuestion({ title }) {
+module.exports = function MatchQuestion({ questionId }) {
   return (
     <div className="form row">
       <div className="s12 pink lighten-4 ">
@@ -9,6 +9,7 @@ module.exports = function MatchQuestion({ title }) {
           className="col s12 matchQuestion"
           action="/themes/matchQuestion"
           method="POST"
+          data-questionId={questionId}
         >
           <div className="row">
             <div className="input-field col s6">

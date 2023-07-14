@@ -15,16 +15,22 @@ router.get("/:idTheme", async (req, res) => {
   res.renderComponent(QuestionL, { theme });
 });
 
-router.post('/matchQuestion', async (req, res) => {
+router.post("/matchQuestion", async (req, res) => {
   try {
-    const {
-      answer, action, method,
-    } = req.body;
+    const { answer, id } = req.body;
     if (answer) {
-      const product = await Question.findOne({ where: { themeId: idTheme } });
-      res.json({ html: res.renderComponent(QuestionL, { product }, { htmlOnly: true }) });
+      const question = await Question.findOne({ where: { id } });
+      if (answer.toLowerCase() === question.answer.toLowerCase()) {
+        res.json({
+          message: "Правильно!",
+        });
+      } else {
+        res.json({
+          message: "ОшибОчка вышла(",
+        });
+      }
     } else {
-      res.json({ message: 'Заполните поле' });
+      res.json({ message: "Заполните поле" });
     }
   } catch (error) {
     res.json({ messageError: error.message });
