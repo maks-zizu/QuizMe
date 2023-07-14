@@ -1,8 +1,8 @@
 module.exports = [
   {
-    theme: "ТЕМА 1",
+    theme: "Не Гагик",
   },
   {
-    theme: "ТЕМА 2",
+    theme: "Фильмы за 300",
   },
 ];
