@@ -16,6 +16,8 @@ router.get("/:idTheme/question/:indexQuestion", async (req, res) => {
   if (index < questions.length) {
     index++;
     res.renderComponent(QuestionL, { question: questions[indexQuestion], index });
+  } else {
+    res.redirect('/themes');
   }
 
   // res.renderComponent(QuestionL, { question: questions[indexQuestion],  });
