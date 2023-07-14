@@ -6,7 +6,7 @@ const Theme = require("./Theme");
 module.exports = function ProductsList({ title, theme }) {
   return (
     <Layout title={title}>
-      <div className="row themeList">
+      <div className="row  themeList">
         {theme.map((theme) => (
           <Theme theme={theme} key={theme.id} />
         ))}

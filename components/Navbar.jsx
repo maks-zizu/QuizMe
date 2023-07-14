@@ -3,7 +3,7 @@ const React = require("react");
 module.exports = function Navbar({ user }) {
   return (
     <nav>
-      <div className="nav-wrapper blue darken-1">
+      <div className="nav-wrapper deep-purple darken-4">
         <a href="/" className="brand-logo">
           QUIZ
         </a>
