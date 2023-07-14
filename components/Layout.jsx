@@ -15,8 +15,8 @@ module.exports = function Layout({ title, children, user }) {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
-        <link rel="stylesheet" href="/css/style.css" />
-        {/* <script defer src="/js/productScript.js" /> */}
+        <link rel="stylesheet" href="/style.css" />
+        <script defer src="/themeScript.js" />
       </head>
       <body>
         <Navbar user={user} />

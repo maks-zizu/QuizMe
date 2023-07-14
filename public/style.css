@@ -51,3 +51,27 @@ h1 {
   padding: 20px;
   border-radius: 10px;
 }
+
+.qqq {
+  display: flex;
+  margin: 50px auto 50px auto;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.q {
+  align-items: center;
+  padding: 250px;
+  background-color: aquamarine;
+  border-radius: 25px;
+}
+
+.q-button {
+  font-size: 20px;
+  color: aliceblue;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
