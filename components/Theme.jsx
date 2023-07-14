@@ -2,13 +2,15 @@ const React = require("react");
 
 module.exports = function Theme({ theme }) {
   return (
-    <div className="col s4 theme-container " data-id={theme.id}>
-      <div className="card product pink lighten-4">
+    <div className="mainContainer" data-id={theme.id}>
+      <div className="theme-container">
         <div className="card-image">
-          <h1 className="card-title">{theme.theme}</h1>
+          <h1 className="theme-title">{theme.theme}</h1>
         </div>
         <div className="card-action">
-          <a href={`/themes/${theme.id}/question/0`}>Узнать подробнее</a>
+          <a href={`/themes/${theme.id}`} className="nextQuest">
+            Перейти к вопросам 👉
+          </a>
         </div>
       </div>
     </div>
