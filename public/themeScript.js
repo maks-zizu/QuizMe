@@ -1,5 +1,5 @@
 const matchQuestion = document.querySelector(".matchQuestion");
-// const qqq = document.querySelector('.qqq');
+const qqq = document.querySelector('.qqq');
 
 if (matchQuestion) {
   matchQuestion.addEventListener("submit", async (e) => {
@@ -25,4 +25,3 @@ if (matchQuestion) {
     }
   });
 }
-console.log(1);
