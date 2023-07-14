@@ -15,9 +15,12 @@ router.get("/:idTheme/question/:indexQuestion", async (req, res) => {
   let index = indexQuestion;
   if (index < questions.length) {
     index++;
-    res.renderComponent(QuestionL, { question: questions[indexQuestion], index });
+    res.renderComponent(QuestionL, {
+      question: questions[indexQuestion],
+      index,
+    });
   } else {
-    res.redirect('/themes');
+    res.redirect("/themes");
   }
 
   // res.renderComponent(QuestionL, { question: questions[indexQuestion],  });
@@ -26,6 +29,7 @@ router.get("/:idTheme/question/:indexQuestion", async (req, res) => {
 router.post("/matchQuestion", async (req, res) => {
   try {
     const { answer, id } = req.body;
+    console.log(req.body);
     if (answer) {
       const question = await Question.findOne({ where: { id } });
       if (answer.toLowerCase() === question.answer.toLowerCase()) {

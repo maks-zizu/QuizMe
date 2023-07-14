@@ -5,7 +5,12 @@ module.exports = function Main({ title, user }) {
   return (
     <Layout title={title} user={user}>
       <div className="main">
-        <img src="https://oborot.ru/wp-content/uploads/2022/06/avito-1024x683.jpg" />
+        <a href="/themes">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/003/206/208/original/quiz-time-neon-signs-style-text-free-vector.jpg"
+            className="mainimg"
+          />
+        </a>
       </div>
     </Layout>
   );
