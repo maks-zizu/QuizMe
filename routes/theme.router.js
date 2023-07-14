@@ -9,10 +9,11 @@ router.get("/", async (req, res) => {
   res.renderComponent(ThemeList, { title: "это все карточки))", theme });
 });
 
-router.get("/:idTheme", async (req, res) => {
+router.get("/:idTheme/question/:indexQuestion", async (req, res) => {
   const { idTheme } = req.params;
-  const theme = await Question.findOne({ where: { themeId: idTheme } });
-  res.renderComponent(QuestionL, { theme });
+  const questions = await Question.findAll({ where: { themeId: idTheme } });
+  console.log(questions[0]);
+  res.renderComponent(QuestionL, { question: questions[0] });
 });
 
 router.post("/matchQuestion", async (req, res) => {
