@@ -4,29 +4,29 @@ const React = require("react");
 module.exports = function MatchQuestion({ questionId }) {
   return (
     <div className="form row">
-      <div className="s12 pink lighten-4 ">
+      <div className="s12 indigo darken-4 classDiv">
         <form
           className="col s12 matchQuestion"
           action="/themes/matchQuestion"
           method="POST"
           data-questionId={questionId}
         >
-          <div className="row">
-            <div className="input-field col s6">
+          <div className="input_container">
+            <div className="input-field col myInp">
               <input
                 name="answer"
                 id="answer"
-                className="validate purple-text"
+                className="validate purple-text input_field"
                 placeholder="answer"
                 required
               />
             </div>
             <button
-              className="btn waves-effect waves-light purple lighten-3"
+              className="btn waves-effect waves-light black submit_btn"
               type="submit"
             >
               Дать ответ
-              <i className="material-icons right">send</i>
+              <i className="material-icons black right">send</i>
             </button>
           </div>
           <h2 className="errorAdd"></h2>

@@ -3,6 +3,17 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: black;
+  height: 1000px;
+}
+.mainimg {
+  border-radius: 10px; /* Скругление углов изображения */
+  border: 5px solid #fff; /* Цвет и ширину рамки */
+  box-shadow: 2px 1px 5px #999999; /* Цвет и размер тени */
+  width: 800px;
+  height: 800px;
+  padding: 10px;
+  margin: 1px auto;
 }
 .themeList {
   display: flex;
@@ -22,15 +33,40 @@
 .imgProduct {
   height: 500px !important;
 }
+.classDiv {
+  border-radius: 25px;
+}
 .form {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
+.input_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  padding: 10px;
+}
 input {
   background-color: white !important;
   border-bottom: none !important;
+  margin: 20px;
+  justify-items: center;
+}
+.input-field {
+  margin: 25px !important;
+  justify-content: center;
+}
+.myInp {
+  width: 700px;
+  height: 60px;
+  background-color: #1a237e;
+}
+.input_field {
+  border-radius: 25px !important;
+  padding-left: 15px !important;
 }
 .card-image {
   padding: 20px;
@@ -61,17 +97,46 @@ h1 {
 }
 
 .q {
+  font-weight: 700;
   align-items: center;
-  padding: 250px;
-  background-color: aquamarine;
+  padding: 200px;
+  margin: 50px;
+  color: white;
   border-radius: 25px;
 }
 
 .q-button {
   font-size: 20px;
+  font-weight: 500;
   color: aliceblue;
   background-color: black;
-  padding: 20px;
+  padding: 15px;
+  margin: 45px;
   border-radius: 10px;
 }
+.q-title {
+  font-size: 39px;
+}
+.lighten-4 {
+  margin: 5px auto;
+  border-radius: 25px;
+}
+.validate .purple-text {
+  width: 100% !important;
+  height: 100px !important;
+}
+.submit_btn {
+  border-radius: 25px;
+  font-weight: 500;
+  height: 100px;
+  width: 200px;
+  font-size: 20px;
+}
+.errorAdd {
+  color: white;
+}
 
+img.mainimg:hover {
+  filter: alpha (Opacity=60); /* прозрачность для IE */
+  opacity: 0.6; /* прозрачность для других браузеров */
+}
