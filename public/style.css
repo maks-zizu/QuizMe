@@ -1,3 +1,7 @@
+a {
+  font-size: 25px !important;
+  font-weight: 500;
+}
 .main {
   display: flex;
   flex-direction: row;
@@ -79,6 +83,8 @@ input {
 }
 h1 {
   background-color: aquamarine;
+  color: white;
+  font-weight: 500;
 }
 .nextQuest {
   font-size: 20px;
